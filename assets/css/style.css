@@ -307,6 +307,7 @@ a{
     font-size: 1.5rem;
     color: #fff;
     padding: 1rem;
+    text-transform: capitalize;
 }
 
 .icons{
@@ -367,11 +368,11 @@ a{
 }
 
 .contatos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-    grid-auto-rows: 50px;
-    grid-gap: 1rem;
+    display: flex;
+    justify-content: space-evenly;
     padding: 3rem 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .item-contato{
@@ -380,7 +381,9 @@ a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .item-contato a{
