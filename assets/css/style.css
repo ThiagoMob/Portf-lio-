@@ -186,6 +186,10 @@
     color: #EA1796;
 }
 
+.last a i{
+    margin-right: 0;
+}
+
 .intro-img{
     flex: 1 1;
 }
