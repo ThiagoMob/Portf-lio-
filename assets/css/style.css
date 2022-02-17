@@ -239,15 +239,14 @@
 }
 
 ::-webkit-scrollbar{
-    background: #fff;   
+    background: #fff;
+    position: relative;  
 }
 ::-webkit-scrollbar-button{
     background: #EA1796;
 }
 ::-webkit-scrollbar-thumb{
     background: #EA1796;
-    border-left: 2px solid #080017;
-    border-right: 2px solid #080017;
 }
 
 .tecnologias-bg{
@@ -299,7 +298,7 @@
 .grid-container .item:nth-child(4){
     background: url('../img/iffy.jpg');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 .grid-container .item:nth-child(5){
@@ -328,7 +327,14 @@
 
 .grid-container .up:hover{
     opacity: 0;
-    transition: 1s linear;
+    transition: .4s linear;
+}
+
+.grid .mais{
+    margin: 30px 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contato-bg{
