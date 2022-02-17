@@ -452,9 +452,8 @@ icons-contato .icons a:nth-child(3){
         text-align: center;
         margin: 25px 0;
     }
-    .icons{
-        left: 50%;
-        transform: translateX(-15%);
+    .icons .last{
+        margin-right: 0;
     }
 }
 
