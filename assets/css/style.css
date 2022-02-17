@@ -111,7 +111,7 @@
 }
 
 .intro-bg{
-    margin-top: 50px;
+    margin-top: 100px;
     height: 100vh;
 }
 
@@ -379,14 +379,20 @@ icons-contato .icons a:nth-child(3){
 @media(max-width: 760px){
     .header{
         flex-direction: column;
+        position: relative;
     }
     .nav{
         margin-top: 15px;
     }
-    
+    .nav ul{
+        justify-content: center;
+    }
+    .nav ul li{
+        margin-bottom: 10px;
+    }
     .nav ul li a{
-        font-size: .7rem;
-        margin-left: 5px;
+        font-size: .6rem;
+        margin-left: 10px;
         padding: 10px;
     }
     .intro-img img{
