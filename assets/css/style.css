@@ -58,7 +58,7 @@
 
 .container.active{
     transition: 1s linear;
-    background: #fff;
+    background: rgba(248, 238, 246, 0.774);
 }
 
 .header-bg{
@@ -157,7 +157,7 @@
 }
 
 .intro-text button{
-    width: 50%;
+    width: max-content;
     background: #EA1796;
     padding: 1rem 1.5rem;
     font-size: 1.25rem;
@@ -191,11 +191,12 @@
 }
 
 .intro-img{
-    flex: 1 1;
+    flex: 1;
 }
 
 .intro-img img{
-    width: 450px;
+    max-width: 450px;
+    object-fit: cover;
 }
 
 .intro-img img.active{
