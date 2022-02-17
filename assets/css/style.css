@@ -31,7 +31,7 @@
 .modo{
     width: 50px;
     height: 25px;
-    background: #EA1796;
+    background: #E6266D;
     border-radius: 25px;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .nav ul li a:hover{
-    background: #EA1796;
+    background: #E6266D;
     transition: .3s linear;
 }
 
@@ -158,7 +158,7 @@
 
 .intro-text button{
     width: max-content;
-    background: #EA1796;
+    background: #E6266D;
     padding: 1rem 1.5rem;
     font-size: 1.25rem;
     text-transform: uppercase;
@@ -183,7 +183,8 @@
 }
 
 .icons-intro a i:hover{
-    color: #EA1796;
+    /* color: #EA1796; */ /*outro rosa*/
+    color: #E6266D;
 }
 
 .last a i{
@@ -236,7 +237,7 @@
 }
 
 .icons-tecno ul li i:hover{
-    color: #EA1796;
+    color: #E6266D;
 }
 
 ::-webkit-scrollbar{
@@ -244,10 +245,10 @@
     position: relative;  
 }
 ::-webkit-scrollbar-button{
-    background: #EA1796;
+    background: #E6266D;
 }
 ::-webkit-scrollbar-thumb{
-    background: #EA1796;
+    background: #E6266D;
 }
 
 .tecnologias-bg{
@@ -273,7 +274,7 @@
 }
 
 .grid-container .item{
-    background: #EA1796;
+    background: #E6266D;
     position: relative;
     box-shadow: -10px 10px 0px #a00948;
 }
@@ -312,7 +313,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #EA1796;
+    background: #E6266D;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -374,7 +375,7 @@
 }
 
 .icons-contato .icons a i:hover{
-    color: #EA1796;
+    color: #E6266D;
 }
 
 .icons-contato .icons a:nth-child(3){
