@@ -144,11 +144,11 @@
 }
 
 @keyframes leftToRight {
-  0% {
+  from {
     transform: translateX(-15rem) ;
     opacity: 0;
   }
-  100% {
+  to {
     transform: translateX(0);
     opacity: 1;
   }
@@ -218,10 +218,10 @@
 }
 
 @keyframes upDown{
-    to{
+    from{
         transform: translateY(-20px);
     }
-    from{
+    to{
         transform: translateY(0);
     }
 }
