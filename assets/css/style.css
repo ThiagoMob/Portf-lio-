@@ -242,12 +242,14 @@
 
 .icons-tecno ul{
     display: flex;
-    overflow-x: scroll
+    /* overflow-x: scroll */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .icons-tecno ul li i{
     font-size: 100px;
-    margin: 50px 60px;
+    margin: 50px;
 }
 
 .icons-tecno ul li i:hover{
@@ -468,6 +470,29 @@
     }
     .icons .last{
         margin-right: 0;
+    }
+    .icons-tecno ul{
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        justify-content: stretch;
+        position: relative;
+    }
+    .icons-tecno ul::after{
+        content: '➠';
+        position: absolute;
+        top: 0px;
+        left: 25px;
+        font-size: 25px;
+        animation: seta .5s ease-in 0s infinite alternate;
+    }
+}
+
+@keyframes seta{
+    from{
+        transform: translateX(-10px);
+    }
+    to{
+        transform: translateX(+10px);
     }
 }
 
