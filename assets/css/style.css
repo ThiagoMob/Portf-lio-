@@ -25,7 +25,7 @@
 /*Dark/White*/
 .container-modo{
     position: fixed;
-    top: 26px;
+    top: 90vh;
     right: 15px;
     z-index: +100;
 }
@@ -33,7 +33,7 @@
 .modo{
     width: 50px;
     height: 25px;
-    background: #E6266D;
+    background: #51C3CE;
     border-radius: 25px;
 }
 
@@ -97,16 +97,82 @@
     width: 70px;
 }
 
-.nav {
-    margin-right: 25px;
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
 }
 
-.nav ul{
-    display: flex;
-    flex-wrap: wrap;
+#menu a {
+  display: block;
+  padding: 0.5rem;
 }
 
-.nav ul li a{
+#btn-mobile {
+    display: none;
+  }
+  
+@media (max-width: 600px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        right: 0px;
+        background: #51C3CE;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu {
+        height: calc(100vh - 80px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.37);
+        color: #080017;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburger::after,#hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+#nav ul li a{
     margin-left: 10px;
     padding: 15px;
     text-transform: uppercase;
@@ -115,8 +181,8 @@
     font-weight: 500;
 }
 
-.nav ul li a:hover{
-    background: #E6266D;
+#nav ul li a:hover{
+    background: #51C3CE;
     transition: .3s linear;
 }
 /*Header*/
@@ -171,7 +237,7 @@
 
 .intro-text button{
     width: max-content;
-    background: #E6266D;
+    background: #51C3CE;
     padding: 1rem 1.5rem;
     font-size: 1.25rem;
     text-transform: uppercase;
@@ -197,7 +263,7 @@
 
 .icons-intro a i:hover{
     /* color: #EA1796; */ /*outro rosa*/
-    color: #E6266D;
+    color: #51C3CE;
 }
 
 .last a i{
@@ -253,7 +319,7 @@
 }
 
 .icons-tecno ul li i:hover{
-    color: #E6266D;
+    color: #51C3CE;
 }
 
 ::-webkit-scrollbar{
@@ -261,10 +327,10 @@
     position: relative;  
 }
 ::-webkit-scrollbar-button{
-    background: #E6266D;
+    background: #51C3CE;
 }
 ::-webkit-scrollbar-thumb{
-    background: #E6266D;
+    background: #51C3CE;
 }
 
 .tecnologias-bg{
@@ -293,9 +359,9 @@
 }
 
 .grid-container .item{
-    background: #E6266D;
+    background: #51C3CE;
     position: relative;
-    box-shadow: -10px 10px 0px #a00948;
+    box-shadow: -10px 10px 0px #75d7e0;
 }
 
 .grid-container .item:nth-child(1){
@@ -332,7 +398,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #E6266D;
+    background: #51C3CE;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -397,7 +463,7 @@
 }
 
 .icons-contato .icons a i:hover{
-    color: #E6266D;
+    color: #51C3CE;
 }
 
 .icons-contato .icons a:nth-child(3){
@@ -415,24 +481,8 @@
 /*Medias*/
 @media(max-width: 760px){
     .header{
-        flex-direction: column;
+        /* flex-direction: column; */
         position: relative;
-    }
-    .nav{
-        margin-top: 15px;
-        margin-right: 0;
-    }
-    .nav ul{
-        justify-content: center;
-        align-items: center;
-    }
-    .nav ul li{
-        margin-bottom: 10px;
-    }
-    .nav ul li a{
-        font-size: .6rem;
-        margin-left: 0;
-        padding: 10px;
     }
     .intro-img img{
         width: 325px;
