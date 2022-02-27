@@ -398,6 +398,12 @@ html{
     background-size: contain;
 }
 
+.grid-container .item:nth-child(6){
+    background: url('../img/wolf.jpg');
+    background-position: center top;
+    background-size: cover;
+}
+
 .grid-container .up{
     position: absolute;
     width: 100%;
