@@ -286,8 +286,6 @@ html{
     filter: contrast(1.25);
     max-width: 450px;
     object-fit: cover;
-    border: 2px solid var(--color);
-    border-radius: 100%;
 }
 
 .intro-img img.active{
