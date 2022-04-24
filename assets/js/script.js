@@ -1,3 +1,14 @@
+function scrollReve(){
+    ScrollReveal({ reset: true });
+
+    ScrollReveal().reveal('.intro-bg', { delay: 800 });
+    ScrollReveal().reveal('.tecnologias-bg', { delay: 900 });
+    ScrollReveal().reveal('.grid-bg', { delay: 900 });
+    ScrollReveal().reveal('.contato-bg', { delay: 900 });
+}
+
+scrollReve()
+
 function active(){
     const introImg = document.querySelector('.intro-img img')
         introImg.classList.add('active')
