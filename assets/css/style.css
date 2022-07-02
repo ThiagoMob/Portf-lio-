@@ -86,6 +86,11 @@ i:hover{
 .header-bg{
     background: transparent;
     height: 50px;
+    position: relative;
+}
+
+.back-header{
+    position: absolute;
 }
 
 .header{
@@ -107,8 +112,8 @@ i:hover{
     transition: background .4s;
 }
 
-.header img{
-    width: 70px;
+#logo{
+    width: 50px;
 }
 
 #menu {
@@ -340,13 +345,17 @@ i:hover{
 
 ::-webkit-scrollbar{
     background: #fff;
-    position: relative;  
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
 }
 ::-webkit-scrollbar-button{
     background: var(--color);
 }
 ::-webkit-scrollbar-thumb{
     background: var(--color);
+    border-radius: 10px;
 }
 
 .tecnologias-bg{
