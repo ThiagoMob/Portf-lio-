@@ -131,7 +131,7 @@ i:hover{
     display: none;
   }
   
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     #menu {
         display: block;
         position: absolute;
@@ -196,7 +196,7 @@ i:hover{
     padding: 15px;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: .7rem;
     font-weight: 500;
 }
 
